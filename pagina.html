@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+</head>
+<body>
+
+    <h1>Hola santiago como estas</h1>
+    <p>no te portes mal porque la nica te dara un beso</p>
+    <p> mi nombre es <span id="nombre"></span> .</p>
+    <p> mi edad es <span id="edad"></span> .</p>
+
+    <script>
+        let info1 = prompt("Ingrese su nombre:");
+        let info2 = prompt("Ingrese su edad:");
+
+        let elemento1 = document.querySelector("#nombre");
+        let elemento2 = document.querySelector("#edad"); // Se agregó 'document.'
+
+        elemento1.innerHTML = info1;
+        elemento2.innerHTML = info2;
+    </script>
+
+</body>
+</html>
